@@ -4,9 +4,9 @@
 
 **Vendor** : DLink  
 
-**Product** : DIR-815 Router 
+**Product** : DIR-845L Router 
 
-**Firmware Link** : Firmware file is attached. Or you can download firmware at https://www.mydlink.co.kr/2013/beta_board/product_detail.php?no=119&model=DIR-815
+**Firmware Link** : Firmware file is attached. Or you can download firmware at (https://www.mydlink.co.kr/2013/beta_board/product_detail.php?no=146&model=DIR-845L)
 
 ![Untitled](https://github.com/goldds96/Report/assets/86287862/825ee633-8b3a-48ce-88a8-9e65db8d2f4b)
 
