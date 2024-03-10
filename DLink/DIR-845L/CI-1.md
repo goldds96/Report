@@ -2,7 +2,7 @@
 
 **Credit** : 주송아 (본인 이메일 추가)  
 
-**Vendor** : DLink  
+**Vendor** : D-Link  
 
 **Product** : DIR-845L Router 
 
