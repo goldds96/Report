@@ -1,4 +1,4 @@
-## D-Link DIR-845L OS Command Injection Vulnerability
+## Linksys E3000 OS Command Injection Vulnerability
 
 
 **Vendor** : Linksys   
