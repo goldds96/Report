@@ -25,7 +25,7 @@ An authenticated user can send a POST request to the **/goform/WriteFacMac** end
 
 The transmitted parameter **"mac"** is stored in the **mac** variable through **websGetVar** in the **formWriteFacMac** function, and the **mac** variable passed to the **doSystemCmd** function without any validation.  
 
-As a result, an authenticated attacker can execute OS commands with root privileges.  
+As a result, attacker can execute OS commands with root privileges.  
 
 
 ![image](https://github.com/user-attachments/assets/56360f24-a7fa-43f6-a47b-067529e2af76)
