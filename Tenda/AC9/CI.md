@@ -1,34 +1,35 @@
 # Firmware
-You can download firmware at https://downloads.linksys.com/downloads/firmware/1224666604712/FW_E1500_v1.0.06.001_US_20140327_code.bin
+Firmware file is attached.
 
 
 
 
 # Overview  
 
-**Vendor** : Linksys
+**Vendor** : Tenda
 
 
-**Product** : E1500 Router
+**Product** : AC9 Router
 
 
 **Vulnerability Type** : Command Injection  
 
 
-**Affected Version** : Firmware version <= v1.0.06.001  
+**Affected Version** : Firmware version = V15.03.06.42 
 
 
 **Description** :  
-A Command Injection vulnerability exists in the **do_upgrade_post function** of the **httpd** binary in the **Linksys E1500** router.  
+A Command Injection vulnerability exists in the **formWriteFacMac** of the **httpd** binary in the **Tenda AC9** router.  
 
-An authenticated user can send a POST request to the **apply.cgi** endpoint via the web interface to change the UI language.  
+An authenticated user can send a POST request to the **/goform/WriteFacMac** endpoint via the web interface.  
 
-The transmitted parameter is stored in the **v4** variable through **nvram_get("detect_lang")** in the **do_upgrade_post** function, and the **v4** variable is formatted into **v15** through **snprintf** and then passed to the **system** function without any validation.  
+The transmitted parameter **"mac"** is stored in the **mac** variable through **websGetVar** in the **formWriteFacMac** function, and the **mac** variable passed to the **doSystemCmd** function without any validation.  
 
 As a result, an authenticated attacker can execute OS commands with root privileges.  
 
-This vulnerability is the same as **CVE-2021-25310** and has also been found in the Linksys E1500.
 
-![Untitled](https://github.com/user-attachments/assets/6d8f2d41-8274-4bf6-b260-688c07c30220)
+![image](https://github.com/user-attachments/assets/56360f24-a7fa-43f6-a47b-067529e2af76)
 
-![Untitled](https://github.com/user-attachments/assets/ea382dd6-3264-4ce2-b674-c3736bec178d)
+
+![image](https://github.com/user-attachments/assets/85b0331b-c0d1-4e1a-b1f1-f0ce32c420b7)
+
